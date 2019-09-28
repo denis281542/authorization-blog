@@ -10,7 +10,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @post.user.email.split('@')[0].capitalize %>
+  <%= @post.user.user_name %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
