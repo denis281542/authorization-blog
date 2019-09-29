@@ -1,5 +1,9 @@
 <h1>Posts</h1>
 
+<%= form_for "", url: posts_path, role: "search", method: :get do %>
+  <%= text_field_tag :search, @search_term, placeholder: 'Search...' %>
+<% end %>
+
 <table>
   <thead>
     <tr>
